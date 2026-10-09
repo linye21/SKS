@@ -1,4 +1,3 @@
-# 敏感度分析  版本4 -- 结合 Count 排序与多比例自动化能垒赋值 --
 import os, re
 import numpy as np
 from scipy.stats import pearsonr
@@ -8,7 +7,6 @@ import re, os, time
 import numpy as np
 import pyDOE2
 
-# 全局变量定义
 drc_all = {}
 path_all = {}
 drc_number = {}
@@ -52,7 +50,7 @@ def job_qsub(i):
             'qdel $id'
     ]
     bash_script = '\n'.join(commands)
-    subprocess.run(['bash', '-c', bash_script])    # 使用Linux命令，删除不行的文件
+    subprocess.run(['bash', '-c', bash_script])   
 #    last_line=get_last_line("print-out")
 #    print(last_line)
 #    if "Run log in the file" not in last_line:
@@ -70,7 +68,6 @@ def job_qsub(i):
     return i
 
 def process_reaction_line(line):
-    """处理包含化学反应的文本行，移除反应式中的空格"""
     pattern = re.compile(r'^(\s*.*?[^ ])(\s+\[.*)$') 
     match = pattern.match(line)
     
@@ -96,11 +93,11 @@ def parse_marked_line(line):
 
 def replace_value(line):
     pattern = re.compile(
-        r'(\[)\s*'                 # 组1: 左方括号
-        r'([+-]?\d+\.\d+?)'        # 组2: 第一个数值
-        r'(\s+)'                   # 组3: 数值间空格
-        r'([+-]?\d+\.\d+?)'        # 组4: 第二个数值
-        r'(\s*\])'                 # 组5: 右方括号
+        r'(\[)\s*'               
+        r'([+-]?\d+\.\d+?)'     
+        r'(\s+)'                 
+        r'([+-]?\d+\.\d+?)'     
+        r'(\s*\])'           
     )
     match = pattern.search(line)
     if not match:
@@ -153,7 +150,7 @@ def get_tof_infulence(filename_log, n):
                 data.append(line)
                 if end_marker in line:
                     break
-        if data: # 增加判断防止空数据报错
+        if data: 
             data.pop(0)
             data.pop(-1)
 
@@ -161,7 +158,7 @@ def get_tof_infulence(filename_log, n):
             parts = line.split()
             if len(parts) >= 3:
                 try:
-                    value = abs(float(parts[-2])) # DRC值取绝对值通常更有意义
+                    value = abs(float(parts[-2])) 
                     
                     reaction = parts[-1]
                     if reaction not in drc_number:
@@ -169,7 +166,6 @@ def get_tof_infulence(filename_log, n):
                     if abs(value) > 0.0001:
                         drc_number[reaction] += 1
                     
-                    # 获取 added_E
                     added_e_val = get_added_E(f'../INCAR_{n}.m', reaction)
                     drc_all_add(reaction, filename_log, value, added_e_val, drc_number[reaction])
                     replace_path_tem.append((value, reaction))
@@ -216,7 +212,6 @@ def judge_k():
         clean_drc = [drc_list[i] for i in valid_indices]
         clean_add_E = [added_E_list[i] for i in valid_indices]
 
-        # 1. 计算基础统计量 (Mean & Std)
         if len(clean_drc) > 0:
             drc_mean = np.mean(clean_drc)
             drc_std = np.std(clean_drc)
@@ -226,7 +221,6 @@ def judge_k():
             drc_std = 0
             score = 0
 
-        # 2. 检查数据有效性以计算相关性
         if len(clean_add_E) < 2 or len(clean_drc) < 2:
             continue
             
@@ -251,14 +245,13 @@ def barrier_candidate(corr_list, can_threshold=0.5, out_file='INCAR.m'):
     """
     """
     num_tomask = int(can_threshold * len(corr_list))
-    # 获取需要保留精确能垒的目标反应集合
     target_equations = {item[0].replace(' ', '') for item in corr_list[:num_tomask]}
 
     try:
         with open('INCAR1.m', 'r', encoding='UTF-8') as f:
             lines = f.readlines()
     except FileNotFoundError:
-        print(f"[!] 找不到文件 INCAR1.m，跳过生成 {out_file}")
+        print(f"[!] no INCAR1.m，pass {out_file}")
         return
 
     match_pattern1 = "% examples :"
@@ -310,7 +303,7 @@ def barrier_candidate(corr_list, can_threshold=0.5, out_file='INCAR.m'):
 
 if __name__ == "__main__":
     #cwd = os.getcwd()
-    cwd= '/home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test_87/100/result_1'
+    cwd= 'result_1'
     path_all = process_pure_log_files(cwd)
     
     corr_list = judge_k()
@@ -336,12 +329,10 @@ if __name__ == "__main__":
 
     threshold_list = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1]
     
-    print(f"\n开始根据比例 {threshold_list} 批量生成 INCAR 文件...")
     for ratio in threshold_list:
         output_filename = f'INCAR_{ratio}.m'
         barrier_candidate(corr_list, can_threshold=ratio, out_file=output_filename)
         shutil.copy(output_filename, 'INCAR.m')
         i=job_qsub(ratio)
-        print(f"已生成: {output_filename} (保留了 Count 排名前 {int(ratio*100)}% 反应的精确能垒)")
 
     print("\nDone! Results saved.")
