@@ -427,11 +427,15 @@ The objective is not to select one arbitrary provisional kinetic model, but to i
 ## External Dependency: CATKINAS
 This repository does not distribute `CATKINAS.p`.
 
-CATKINAS is third-party microkinetic analysis software. Users must obtain an authorized copy of CATKINAS separately and comply with its applicable terms of use.
+CATKINAS is third-party software and is not covered by the MIT License of this repository. Users must obtain an authorized copy separately and comply with its applicable terms of use.
 
-Before running the workflow, place an authorized copy of `CATKINAS.p` in the corresponding CATKINAS working directories
+Reference:
 
-
+Chen, J.; Jia, M.; Hu, P.; Wang, H.
+CATKINAS: A Large-Scale Catalytic Microkinetic Analysis Software
+for Mechanism Auto-Analysis and Catalyst Screening.
+Journal of Computational Chemistry 2021, 42, 379–391.
+DOI: 10.1002/jcc.26464
 
 
 ## Contact
