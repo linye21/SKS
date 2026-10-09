@@ -220,9 +220,6 @@ abs(X_DRC) > 1.0e-4
 
 This threshold is a study-specific parameter rather than a universal SKS constant. Modify it in `get_tof_infulence()` when another value is required.
 
-> [!CAUTION]
-> Ensure that the threshold in the code is identical to the value reported in the manuscript and Supporting Information.
-
 ### Ranking rule
 
 Although several statistics are calculated, the final elementary-step ranking is based on the occurrence count:
