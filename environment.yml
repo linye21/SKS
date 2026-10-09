@@ -1,0 +1,11 @@
+name: sks
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - pip
+  - pip:
+      - pyDOE2
