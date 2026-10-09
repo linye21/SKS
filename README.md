@@ -252,9 +252,7 @@ For a fraction $N$:
 - all remaining steps receive provisional barriers according to
 
 $$
-\Delta G^\ddagger_{i,f}
-=
-\max(\Delta G_i,0)+0.75\ \mathrm{eV}.
+\Delta G^\ddagger_{i,f}=\max(\Delta G_i,0)+0.75\ \mathrm{eV}.
 $$
 
 The generated files are:
