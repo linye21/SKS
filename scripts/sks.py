@@ -84,11 +84,6 @@ def generate_lhs_samples(n_reactions, n_samples=100):
     return lhs * 1.5
 
 
-N_REACTIONS =81
-print(f"Total reactions to modify: {N_REACTIONS}")
-LHS_MATRIX = generate_lhs_samples(N_REACTIONS)  
-print(f"LHS samples generated: {LHS_MATRIX.shape}")
-
 def replace_value(line, sample_values, reaction_idx):
     prefix, re_value, on_value = process_line(line)
 
@@ -176,6 +171,11 @@ def main(out_file_name, sample_id):
     with open(out_file_name, 'w', encoding="UTF-8") as f:
         f.writelines(new_file1_lines)
     shutil.copy(out_file_name, 'INCAR.m')
+    
+N_REACTIONS =81
+print(f"Total reactions to modify: {N_REACTIONS}")
+LHS_MATRIX = generate_lhs_samples(N_REACTIONS)  
+print(f"LHS samples generated: {LHS_MATRIX.shape}")
 
 if __name__ == "__main__":
     for sample_id in range(100):
