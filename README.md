@@ -14,9 +14,7 @@ The workflow samples unknown transition-state (TS) contributions over a prescrib
 For elementary step $i$, the provisional forward activation free-energy barrier is assigned as
 
 $$
-\Delta G^\ddagger_{i,f}
-=
-\max(\Delta G_i,0)+E_{x,i},
+\Delta G^\ddagger_{i,f}=\max(\Delta G_i,0)+E_{x,i},
 $$
 
 where $E_{x,i}$ is a non-negative sampled TS contribution.
