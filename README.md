@@ -67,8 +67,6 @@ The original scripts assume the following relative directory layout:
     └── results_1/            # CATKINAS outputs from the refinement tests
 ```
 
-\* Include or redistribute `CATKINAS.p` only when you have permission to do so. Otherwise, instruct users to provide their own authorized CATKINAS installation.
-
 ---
 
 ## Requirements
