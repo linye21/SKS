@@ -11,20 +11,20 @@ The workflow samples unknown transition-state (TS) contributions over a prescrib
 
 ## Method Overview
 
-For elementary step \(i\), the provisional forward activation free-energy barrier is assigned as
+For elementary step $i$, the provisional forward activation free-energy barrier is assigned as
 
-\[
+$$
 \Delta G^\ddagger_{i,f}
 =
 \max(\Delta G_i,0)+E_{x,i},
-\]
+$$
 
-where \(E_{x,i}\) is a non-negative sampled TS contribution.
+where $E_{x,i}$ is a non-negative sampled TS contribution.
 
 The workflow contains two stages:
 
 1. **Stochastic barrier sampling (`sks.py`)**
-   - Generates Latin hypercube samples for \(E_{x,i}\).
+   - Generates Latin hypercube samples for $E_{x,i}$.
    - Creates multiple CATKINAS input files.
    - Copies each sampled input to `INCAR.m`.
    - Submits one MATLAB/CATKINAS calculation at a time through PBS/Torque.
@@ -32,7 +32,7 @@ The workflow contains two stages:
 
 2. **Statistical screening and TS-refinement tests (`N/N_test.py`)**
    - Reads the stochastic CATKINAS logs.
-   - Extracts \(|X_{\mathrm{DRC},i}|\) for every elementary step.
+   - Extracts $|X_{\mathrm{DRC},i}|$ for every elementary step.
    - Counts how frequently each step exceeds the selected DRC threshold.
    - Ranks elementary steps by occurrence count.
    - Generates input files retaining increasing fractions of the highest-ranked reference barriers.
@@ -248,16 +248,16 @@ threshold_list = [
 ]
 ```
 
-For a fraction \(N\):
+For a fraction $N$:
 
-- the top-ranked \(N\) fraction of elementary steps retain their reference barriers from `N/INCAR1.m`;
+- the top-ranked $N$ fraction of elementary steps retain their reference barriers from `N/INCAR1.m`;
 - all remaining steps receive provisional barriers according to
 
-\[
+$$
 \Delta G^\ddagger_{i,f}
 =
 \max(\Delta G_i,0)+0.75\ \mathrm{eV}.
-\]
+$$
 
 The generated files are:
 
