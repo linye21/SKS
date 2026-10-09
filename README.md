@@ -424,28 +424,15 @@ The objective is not to select one arbitrary provisional kinetic model, but to i
 
 ---
 
-## Citation
+## External Dependency: CATKINAS
+This repository does not distribute `CATKINAS.p`.
 
-If this repository is used in academic work, please cite the associated SKS publication after its bibliographic information becomes available:
+CATKINAS is third-party microkinetic analysis software. Users must obtain an authorized copy of CATKINAS separately and comply with its applicable terms of use.
 
-```text
-Adaptive Stochastic Kinetic Screening for Identifying Catalytic Reaction Pathways
-```
+Before running the workflow, place an authorized copy of `CATKINAS.p` in the corresponding CATKINAS working directories
 
----
 
-## License
 
-No license is currently specified.
-
-Before public release, confirm:
-
-1. which license should apply to `sks.py` and `N_test.py`; and
-2. whether `CATKINAS.p` may legally be redistributed in the repository.
-
-A third-party or separately licensed CATKINAS file should not automatically be covered by the license applied to the Python scripts.
-
----
 
 ## Contact
 
