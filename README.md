@@ -69,17 +69,6 @@ The original scripts assume the following relative directory layout:
 
 \* Include or redistribute `CATKINAS.p` only when you have permission to do so. Otherwise, instruct users to provide their own authorized CATKINAS installation.
 
-### Why the directory layout matters
-
-The original source uses relative paths. In particular:
-
-- `sks.py` must be run from the repository root.
-- `N_test.py` must be run from the `N/` directory.
-- `N_test.py` reads the stochastic inputs through paths such as `../INCAR_1.m`.
-- The stochastic CATKINAS logs are expected in the root-level `results_1/` directory.
-- Each `kinetic.script`, `CATKINAS.p`, and active `INCAR.m` must be located in the same CATKINAS working directory.
-- CATKINAS creates `results_1/` at the same level as `CATKINAS.p`.
-
 ---
 
 ## Requirements
