@@ -1,0 +1,14 @@
+/var/spool/slurmd/job232311/slurm_script: line 27: 0: command not found
+OMP: Warning #181: OMP_STACKSIZE: ignored because KMP_STACKSIZE has been defined
+
+Beauty the Reaction Mechanisms
+
+
+Get the simplified chemical formula: 
+Warning: find a undefined atom symbol : # in the molecule #1, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : # in the molecule #2, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : # in the molecule #3, please use the standard atom symbol ! 
+
+Warning: Can't get the chemical formula for the undefined '#1, #2, #3' by mass conservation !!!
+
+Warning: Found Mass nonConservation Reaction : <difference>

@@ -1,0 +1,26 @@
+/var/spool/slurmd/job242323/slurm_script: line 27: 0: command not found
+OMP: Warning #181: OMP_STACKSIZE: ignored because KMP_STACKSIZE has been defined
+
+Beauty the Reaction Mechanisms
+
+
+Get the simplified chemical formula: 
+Warning: find a undefined atom symbol : M in the molecule FMR, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule FMR_CH2CH2CH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule FMR_CH2CH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule FMR_CH2CH3CH2CO, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule FMR_CH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule FMR_CH3CH2CO, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule FMR_HCH2CHCH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule FMR_HCH2CO, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR_CH2CH2CH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR_CH2CH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR_CH2CH3CH2CO, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR_CH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR_CH3CH2CO, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR_HCH2CHCH3, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : M in the molecule SMR_HCH2CO, please use the standard atom symbol ! 
+Warning: find a undefined atom symbol : # in the molecule #1, please use the standard atom symbol ! 
+
+Get the chemical formula for the undefined 'FMR, FMR_CH2CH2CH3, FMR_CH2CH3, FMR_CH2CH3CH2CO, FMR_CH3, FMR_CH3CH2CO, FMR_HCH2CHCH3, FMR_HCH2CO, SMR, SMR_CH2CH2CH3, SMR_CH2CH3, SMR_CH2CH3CH2CO, SMR_CH3, SMR_CH3CH2CO, SMR_HCH2CHCH3, SMR_HCH2CO, #1' by mass conservation !!!

@@ -1,0 +1,165 @@
+ run with the command: CATKINAS('INPUT'), CATKINAS INPUT or Main
+ 
+ % Input 
+ INPUT is the input file which contains the reaction mechanisms and reaction conditions
+ the simple matlab codes are acceptable in INPUT file
+ '%' and '!' for comments, ';' for separation
+ From the reaction mechanism equations to the kinetic equations
+ the examples :
+ {xx}: for note                 Energy input: [  Ea     G0   ]/[Ea(scaling);G0(scaling)]/[ Ea(BEP)   G0(scaling)]
+ {01}: H2 + 2#1 <-> 2H#1                      [  0.27  -0.20 ]/[ A1  B     ; a1  b     ]/[ A1  B     a1  b      ]
+ {02}: O2 + 2O#2 <-> 2O#2                     [  0.85   0.47 ]/[ for one Energy mode   ]/[ for one Energy mode  ]
+ {03}: H#1 + O#2 <-> #1 + OH#2                [  1.18   1.09 ]/[ A1  A2  B ; a1  a2  b ]/[ A1  B     a1  a2  b  ]
+ {04}: H#1 + OH#2 <-> #1 + #2 + H2O           [  1.18   1.09 ]/[ for two Energies mode ]/[ for two Energies mode]
+ 
+ #i for site i, e.g., #1 for site 1
+ the forward and reverse reaction are separated by <-> , 
+ and use it as an identifier for the reaction mechanism equations 
+ H2, O2, H2O for the gas species
+ H#1, O#2, OH#2 for the adsorbed species
+ Species(p) : the relative pressure item of Species in rate equation
+ Species(c) : the relative concentration item of Species in rate equation
+ format : variable = value; Or matlab command;
+ 
+ Istart : start from a previous run with new parameters setting or not : 1/0
+ npar   : the process number for parallel computing
+ runid  : assign to the runid-th run : 1... , the last unfinished one for default
+ Ndigits : the digits for calculation in modified Newton Methods
+ MaxTime : the maximum time for each newton try : s
+ MaxOdeTime : the maximum time for each ode simulation try : s
+ PlotOdeTime: the maximum time for plot ode simulation: s
+ OdeSolver: select one ODE solver for ODE simulations: @ode15s, @ode45, @ode23, @ode113, @ode23s, @ode23t, @ode23tb 
+ OdeOption: set the options for ODE simulations: {'AbsTol', 1e-30, 'RelTol', 1e-10}; 
+            type odeset and help odeset to see all  available options and the corresponding parameter descriptions
+ TimeMode : auto increase the MaxTime for each PSO generation iteration or not : 1/0
+ SaveMode : save all the data in double or sym : 0/1
+ SaveFreq : save frequency for every N sample runs : 1
+ SkipMode : never skip the solution found by modified Newton Methods, or skip if it contains any/all zeros : 0/1/2
+ PlotType : plot the reaction curve/map, energy profile, flow diagram and ode simulation, 
+            none/[curve/map]/profile/diagram/ode simulation/all/[1 ... 4] : 0/1/2/3/4/5/[specific]
+ PlotMode : plot the reaction energy profile, flow diagram and ode simulation, none/first/always/[1 ... n] : 0/1/inf/[specific]
+ ProfMode : plot the reaction energy profile in types of reaction total energy, standard free Gibbs energy, free Gibbs energy, steady free Gibbs energy or all, 0/1/2/3/4
+ FlowMode : plot the flow diagram in types of intermediate, reaction, combination or all, 0/1/2/3
+ PlotList : assigned reaction results to plot : The reaction Rate/Selectivity/Reversibility/Coverage/Apparent barrier/Degree Rate Control of 
+            Barrier/Intermediate/[Pressure/Concentration]/[descriptor E1/E2] : Ri/Si_j/Zi/Yi/[Bs]i_j/I[s]i_j/PC[s]i_j/G[s]i_j, i/j are assigned index/TOF index or their
+            combinations, e.g. PlotList = {'R1+1/2*2-3', 'S1+2_3+4', 'Z-2-0.3*1+5', 'Y1+2+3', 'E3', 'B-2-3*1+5_1+2*2-3', 'Is5_2', 'PC1_3', 'Gs1_3'};
+ PathOrder : assign reaction path order list for energy profiles: PathOrder = {[1 2 3], [1 4]}
+ PathCoord : assign reaction path coordination list for energy profiles: PathCoord = {[1 2 3], [1 3]}
+ PathScale : assign reaction path scale list for energy profiles: PathScale = {[1 2 1/2], [1 -1]}
+ ColorMode : set the colormap for the current figure to one of the predefined colormaps:
+            'parula', 'turbo', 'hsv', 'hot', 'cool', 'spring', 'summer', 'autumn', 'winter', 'gray', 'bone', 'copper', 'pink', 'jet'
+ FigMode  : save the output figures format as .fig/.png/both : 1/2/3
+ SimMode  : simplify the reaction flow diagram with/without reaction sites or [reactant/product], or both: 0/1[no sites]/2[surface spieces onl]/3
+ SimValue : the cut-off value of reaction rate to simplify the reaction energy profile and flow diagram : 0.05
+ CompMode : compare the reaction energy profile and flow diagram in same/self ranges : 1/0
+ 
+ Q0 : the initial coverage state
+ T  : the temperature of the reaction
+ CalcDRC : calculate the degree of rate control or not : 1/0
+ DRCMode : fix the pressure and concentration of reactant/product for CSTR when calculating the degree of rate control or not : 0/1
+ EappMode: fix the pressure and concentration of reactant/product for CSTR when calculating the apparent activation energy or not : 0/1
+ 
+ set the reaction condition or freeze all the reactant and product pressure/concentration
+ Pn  : the normalized total relative pressure of gas : bar. Pn = Ps*Ns/Ng
+ Fgt : the normalized rate of gas volume flow : m^3/(mol*s). Fgt = Vgt/Ns
+ Cn  : the normalized total relative concentration of liquid : mol/L. Cn = Cs*Ns/Nl
+ Flt : the normalized rate of liquid volume flow : m^3/(mol*s). Flt = Vlt/Ns
+ where Ns : the number of active site : mol
+       Ps : the total relative pressure of gas : bar
+       Ng : the total number of the gas molecular : mol
+       Vgt: the rate of gas volume flow : m^3/s [ warning : change from m^3/h ]
+       Cs : the total relative concentration of liquid : mol/L
+       Nl : the total number of the liquid molecular : mol
+       Vlt: the rate of liquid volume flow : m^3/s [ warning : change from m^3/h ]
+ P_Species : the relative pressure of the Species
+ C_Species : the relative concentration of the Species
+ Qi_Species : the relative coverage of the Species at site i, v for vacancy
+ Q_Species : the relative coverage of the Species for only one site case (#)
+ X_Species_INIT : the initial Species parameters X: P C Q/Qi
+ X_Species_FROZ : freeze the Species parameters X: P C
+ X_Species_RATE : the sampling rate among pressures/concentrations for the Species parameters X: P C
+ X_Species_EQUI : deal with Reaction i in equilibrium to solve X_Species, X: Q/Qi
+ 
+ Energy input ways : 
+       1. provide matlab function for calculating Ea/G0 by setting fun2GetGE = @funName
+       2. provide Ea/G0 beside reaction mechanism [Ea, G0]/[Ea(scaling) G0(scaling)]/[Ea(BEP) G0(scaling)]
+       3. provide Ea/G0 directly by setting Ea = [Ea1, Ea2...]/[Ea(scaling)'...]/[Ea(BEP)'...], G0 = ...
+ CalMode : calculate mode : 0 for single, >= 1 for curve, >= 2 for map
+ E1/E2 : the energy (range) for the descriptor 
+ Available ranges : E(1/2)/T/P/C/Fgt/Flt : the energy(1/2)/temperature/pressure/concentration/gas/liquid volume flow rate
+                   range for descriptor, which are labeled 0/1/2/3/4/5, respectively
+ fun2E1/fun2E2 : A provided matlab function for calculating new E1 based on origin E1(for coverage effect etc.) :
+                 fun2E1 = @funName, i.e. E1 = funName(E1), or fun2E1 = @(E1) E1 + 0.2*Q1_I directly
+ when CalMode >= 1, curve: E1 : 1.0; T  : 1.1; P  : 1.2; C  : 1.3; Fgt: 1.4; Flt: 1.5
+ when CalMode >= 2, map:   E1, E2 : 2.00; E1, T  : 2.01; E1, P  : 2.02; E1, C  : 2.03
+            E1, Fgt: 2.04; E1, Flt: 2.05; T , P  : 2.12; T , C  : 2.13; T , Fgt: 2.14; T , Flt: 2.15
+            P , C  : 2.23; P , Fgt: 2.24; P , Flt: 2.25; C , Fgt: 2.34; C , Flt: 2.35; Fgt, Flt: 2.45
+ fun2GetGE : A provided matlab function for calculating Ea and G0 : fun2GetGE = @funName, i.e. [Ea, G0] = funName(var1, var2), 
+            where [Ea, G0] = funName() for single, [Ea, G0] = funName(E1) for curve and [Ea, G0] = funName(E1, E2) for map;
+ Ea : the energy barriers of each reaction for single, or scaling/BEP parameters for curve(2*Nreaction) and map(3/2*Nreaction);  
+ G0 : the Gibbs free energy of each reaction for single, or scaling parameters for curve(2*Nreaction) and map(3*Nreaction);  
+ fun2A : A provided matlab function for calculating self defined preexponetial factor(A) (kB*T0/h for default) :
+         fun2A = @funName, i.e. A = funName() (use global kB h T0 to obtain the corresponding values)
+ BEPMode : the barrier input mode in scaling/BEP relationship, i.e. Ea = sum(alphai*Ei) + beta or alpha*G0 + beta : 1/0
+ 
+ ThermoMode : the thermodynamics correction mode for reactant/product species with 
+              none/dH/dH-TdS/dH-TdS+ZPE/-TdS/-TdS+ZPE/ZPE/dH+ZPE : 0/1/2/3/4/5/6/7
+ BarrierMode : the barrier correction mode for adsorption/desorption reaction by none/
+               thermodynamics(TD)/transition-state theory(TST)/collision theory(CT) : -2/-1/0~1/2
+ ConsMode: the mode for the barrier constrained, i.e. larger than none/0/E0/G0/(0, E0)/(0, G0)/(E0, G0)/All : 0/1/2/3/4/5/6/7
+ As : the areas of the active site (for collision theory(CT)) : Angstrom^2; 
+ Mr_Species : the relative molecular mass for CT calculation, the value should be set 
+              when species with a nonstandard chemical formula, or set the value to be -2/-1/0~1
+              to shift the species adsorption/desorption to none/TD/TST procedure
+ Thermo_Species : the thermodynamics parameters for the Species, which is not in the database or overwrite it
+ Thermo_Species = [dGc]; n = 1; dGc : the free energy correction for the species
+                = [G, H0, ZPE]; 1 < n <= 3; G = H0 + CpT - TdS; dGc = G - H0;
+                = [H, H0, CpT, TdS, ZPE, Ef]; 3 < n <= 6; Ef : the formation energy
+                = [A, B, C, D, E, F, G, H, freqi, Ef]; n > 7; A-H : the shomate equation parameters, freqi : the frequency (cm^-1) for calclating ZPE
+ 
+ % Define default Thermodynamics data in the file Thermodynamics.data
+ '%' and '!' for comments
+ Key words: CF, TR, AH, FQ, EF
+ CF: the chemical formula, TR: the temperature range, AH: the shomate parameters [A - H]
+ FQ: the frequency, EF: the experimental formation energy
+ CF = H2;
+      EF = [   -0.272839]; FQ = [ 4401.00];
+      TR = [  298.00, 1000.00]; AH = [   33.066178,  -11.363417,   11.432816,   -2.772874,   -0.158558,   -9.980797,  172.707974,    0.000000];
+      TR = [ 1000.00, 2500.00]; AH = [   18.563083,   12.257357,   -2.859786,    0.268238,    1.977990,   -1.147438,  156.288133,    0.000000];
+      TR = [ 2500.00, 6000.00]; AH = [   43.413560,   -4.293079,    1.272428,   -0.096876,  -20.533862,  -38.515158,  162.081354,    0.000000];
+ Or set Thermodynamics_data cell in the file Thermodynamics_data.mat, 
+ such as Thermodynamics_data{1} with fields of
+       ChemForm: 'H2'
+    form_energy: [ -0.272839]
+    frequencies: 4401
+    temperature: [3x2 double]
+     parameters: [3x8 double]
+ All the input energy in eV unit
+ 
+ % Output
+ all the results are in result_INPUT directory
+ logi : the run log file
+ datai.mat : the calculation output results file
+ you can load the data by matlab command: load('datai.mat')
+ where  R : the reaction forward/reverse/net rate,                size : Nsample*Nreaction*3
+     Rnet : the reaction net rate,                                size : Nsample*Nreaction
+        Z : the reaction reversibility,                           size : Nsample*Nreaction
+        y : the coverage/pressure/concentration of species,       size : Nsample*Nspecies
+       dF : the log10(residue) of steady-state equation,          size : Nsample*Nspecies
+     Eapp : the apparent reaction barrier,                        size : Nsample*Nreaction
+  Eao/Ean : the original/corrected reaction barrier,              size : Nsample*Nreaction
+  G0o/G0n : the original/corrected reaction Gibbs energy,         size : Nsample*Nreaction
+    kf/kr : the reaction forward/reverse rate constant,           size : Nsample*Nreaction
+    DRC_B : the degree of rate control of barrier,                size : Nsample*Nbarrier*Nreaction
+    DRC_I : the degree of rate control of intermediate,           size : Nsample*Nsurspecies*Nreaction
+   DRC_PC : the degree of rate control of pressure/concentration, size : Nsample*Nglspecies*Nreaction
+    DRC_G : the degree of rate control of descriptor E1/E2,       size : Nsample*NEdescriptors*Nreaction
+ Base on reactants/products :
+    Rnets : the reaction net rate,                                size : Nsample*Nglspecies
+    Eapps : the apparent reaction barrier,                        size : Nsample*Nglspecies
+   DRC_Bs : the degree of rate control of barrier,                size : Nsample*Nbarrier*Nglspecies
+   DRC_Is : the degree of rate control of intermediate,           size : Nsample*Nsurspecies*Nglspecies
+  DRC_PCs : the degree of rate control of pressure/concentration, size : Nsample*Nglspecies*Nglspecies
+   DRC_Gs : the degree of rate control of descriptor E1/E2,       size : Nsample*NEdescriptors*Nglspecies
+ pari : the parallel computing folder
+ figi : the figure folder for calculating reaction curve/map, energy profile, flow diagram and ode simulation, etc.

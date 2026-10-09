@@ -1,0 +1,859 @@
+nohup: ignoring input
+242276
+Usage:
+    qdel *job_id*...
+
+242277
+242278
+242279
+Usage:
+    qdel *job_id*...
+
+242280
+242281
+242282
+Usage:
+    qdel *job_id*...
+
+242285
+242286
+242287
+Usage:
+    qdel *job_id*...
+
+242288
+242289
+242290
+Usage:
+    qdel *job_id*...
+
+242291
+242292
+242294
+Usage:
+    qdel *job_id*...
+
+242295
+Usage:
+    qdel *job_id*...
+
+242296
+242297
+Usage:
+    qdel *job_id*...
+
+242298
+Usage:
+    qdel *job_id*...
+
+242299
+242300
+Usage:
+    qdel *job_id*...
+
+242301
+Usage:
+    qdel *job_id*...
+
+242302
+242303
+242304
+Usage:
+    qdel *job_id*...
+
+242307
+242309
+Usage:
+    qdel *job_id*...
+
+242310
+Usage:
+    qdel *job_id*...
+
+242311
+Usage:
+    qdel *job_id*...
+
+242312
+Usage:
+    qdel *job_id*...
+
+242313
+Usage:
+    qdel *job_id*...
+
+242314
+Usage:
+    qdel *job_id*...
+
+242315
+Usage:
+    qdel *job_id*...
+
+242316
+242317
+Usage:
+    qdel *job_id*...
+
+Total reactions to modify: 35
+LHS samples generated: (100, 35)
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log1
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log1 log_n 1
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log2
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log2 log_n 2
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log3
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log3 log_n 3
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log4
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log4 log_n 4
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log5
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log5 log_n 5
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log6
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log6 log_n 6
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log7
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log7 log_n 7
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log8
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log8 log_n 8
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log9
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log9 log_n 9
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log10
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log10 log_n 10
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log11
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log11 log_n 11
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log12
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log12 log_n 12
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log13
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log13 log_n 13
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log14
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log14 log_n 14
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log15
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log15 log_n 15
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log16
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log16 log_n 16
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log17
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log17 log_n 17
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log18
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log18 log_n 18
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log19
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log19 log_n 19
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log20
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log20 log_n 20
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log21
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log21 log_n 21
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log22
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log22 log_n 22
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log23
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log23 log_n 23
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log24
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log24 log_n 24
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log25
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log25 log_n 25
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log26
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log26 log_n 26
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log27
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log27 log_n 27
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log28
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log28 log_n 28
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log29
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log29 log_n 29
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log30
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log30 log_n 30
+wait
+Q
+wait-----
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log31
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log31 log_n 31
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log32
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log32 log_n 32
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log33
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log33 log_n 33
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log34
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log34 log_n 34
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log35
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log35 log_n 35
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log36
+last_line: 242318
+242320
+242322
+Usage:
+    qdel *job_id*...
+
+242323
+Usage:
+    qdel *job_id*...
+
+242324
+242326
+Usage:
+    qdel *job_id*...
+
+242328
+Usage:
+    qdel *job_id*...
+
+242329
+242330
+Usage:
+    qdel *job_id*...
+
+242331
+Usage:
+    qdel *job_id*...
+
+242332
+242333
+242336
+Usage:
+    qdel *job_id*...
+
+242338
+242341
+242343
+242345
+Usage:
+    qdel *job_id*...
+
+242346
+242347
+Usage:
+    qdel *job_id*...
+
+242348
+Usage:
+    qdel *job_id*...
+
+242350
+242351
+Usage:
+    qdel *job_id*...
+
+242353
+242354
+242355
+Usage:
+    qdel *job_id*...
+
+242356
+Usage:
+    qdel *job_id*...
+
+242357
+242358
+Usage:
+    qdel *job_id*...
+
+242359
+242360
+242361
+Usage:
+    qdel *job_id*...
+
+242362
+242363
+Usage:
+    qdel *job_id*...
+
+242364
+Usage:
+    qdel *job_id*...
+
+242365
+242366
+Usage:
+    qdel *job_id*...
+
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log36 log_n 36
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log37
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log37 log_n 37
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log38
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log38 log_n 38
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log39
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log39 log_n 39
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log40
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log40 log_n 40
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log41
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log41 log_n 41
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log42
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log42 log_n 42
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log43
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log43 log_n 43
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log44
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log44 log_n 44
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log45
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log45 log_n 45
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log46
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log46 log_n 46
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log47
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log47 log_n 47
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log48
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log48 log_n 48
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log49
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log49 log_n 49
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log50
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log50 log_n 50
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log51
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log51 log_n 51
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log52
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log52 log_n 52
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log53
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log53 log_n 53
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log54
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log54 log_n 54
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log55
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log55 log_n 55
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log56
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log56 log_n 56
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log57
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log57 log_n 57
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log58
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log58 log_n 58
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log59
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log59 log_n 59
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log60
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log60 log_n 60
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log61
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log61 log_n 61
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log62
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log62 log_n 62
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log63
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log63 log_n 63
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log64
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log64 log_n 64
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log65
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log65 log_n 65
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log66
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log66 log_n 66
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log67
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log67 log_n 67
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log68
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log68 log_n 68
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log69
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log69 log_n 69
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log70
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log70 log_n 70
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log71
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log71 log_n 71
+wait
+C
+R
+C
+R
+242367
+Usage:
+    qdel *job_id*...
+
+242368
+242369
+Usage:
+    qdel *job_id*...
+
+242370
+Usage:
+    qdel *job_id*...
+
+242371
+242372
+242373
+Usage:
+    qdel *job_id*...
+
+242374
+242375
+242376
+Usage:
+    qdel *job_id*...
+
+242377
+242378
+242379
+Usage:
+    qdel *job_id*...
+
+242380
+242381
+242382
+Usage:
+    qdel *job_id*...
+
+242383
+242384
+Usage:
+    qdel *job_id*...
+
+242385
+Usage:
+    qdel *job_id*...
+
+242386
+242387
+242388
+Usage:
+    qdel *job_id*...
+
+242389
+Usage:
+    qdel *job_id*...
+
+242390
+242391
+Usage:
+    qdel *job_id*...
+
+242392
+Usage:
+    qdel *job_id*...
+
+242393
+242394
+Usage:
+    qdel *job_id*...
+
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log72
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log72 log_n 72
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log73
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log73 log_n 73
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log74
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log74 log_n 74
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log75
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log75 log_n 75
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log76
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log76 log_n 76
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log77
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log77 log_n 77
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log78
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log78 log_n 78
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log79
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log79 log_n 79
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log80
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log80 log_n 80
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log81
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log81 log_n 81
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log82
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log82 log_n 82
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log83
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log83 log_n 83
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log84
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log84 log_n 84
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log85
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log85 log_n 85
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log86
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log86 log_n 86
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log87
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log87 log_n 87
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log88
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log88 log_n 88
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log89
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log89 log_n 89
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log90
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log90 log_n 90
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log91
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log91 log_n 91
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log92
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log92 log_n 92
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log93
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log93 log_n 93
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log94
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log94 log_n 94
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log95
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log95 log_n 95
+wait
+Q
+wait-----
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log96
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log96 log_n 96
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log97
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log97 log_n 97
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log98
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log98 log_n 98
+wait
+R
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log99
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log99 log_n 99
+wait
+C
+R
+C
+R
+Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log100
+last_line: Run log in the file : /home/hxyang/my_Code/matlab_NN/test_sasian/test_new/test1/100/result_1/log100 log_n 100

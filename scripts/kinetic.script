@@ -1,0 +1,35 @@
+#!/bin/bash
+#SBATCH -J curve_CO
+#SBATCH -o vasp.out
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=12
+#SBATCH -t 10:00:00
+#SBATCH -p slurm
+
+
+EXEC=/home/apps/Matlab/R2020a/bin/matlab
+
+# setup mpd env (Of course use some other secret word than "dfadfs")
+if [ ! -f ~/.mpd.conf ]; then
+/bin/echo "secretword=dfadfs" >> ~/.mpd.conf
+/bin/chmod 600 ~/.mpd.conf
+fi
+
+##########################################################
+# The following should be no need to
+#       change any of these settings for normal use.
+##########################################################
+
+# setup Nums of Processo4r
+NP= `cat $SLURM_JOB_NODEFILE|wc -l`
+echo "Numbers of Processors:  $NP"
+echo "---------------------------"
+cat $SLURM_JOB_NODEFILE > mpd.hosts
+
+# setup mpi env (em64t)
+export OMP_NUM_THREADS=1
+export I_MPI_PIN_DOMAIN=auto
+export MPD_CON_EXT=$SLURM_JOBID
+
+nohup $EXEC -nodesktop -nosplash -r "CATKINAS('INCAR.m')" > print-out
+

@@ -1,0 +1,15 @@
+#!/bin/bash 
+#SBATCH -J matlab_101
+#SBATCH -o vasp.out
+#SBATCH -N 1
+#SBATCH --ntasks-per-node=12
+#SBATCH -t 720:00:00
+#SBATCH -p CP2K
+
+
+source /home/fwtop/.bashrc
+module purge
+module load intel/2019b
+# go to work dir
+#cd $PBS_O_WORKDIR
+nohup python -u dot_add.py > test.out 2>&1

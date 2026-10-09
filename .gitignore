@@ -1,0 +1,16 @@
+@"
+# CATKINAS generated results
+**/result_1/
+**/results_1/
+
+# MATLAB and runtime outputs
+*.mat
+*.err
+*_finished
+print-out
+last_line
+
+# Python cache
+__pycache__/
+*.py[cod]
+"@ | Set-Content -Encoding UTF8 .gitignore
