@@ -305,18 +305,12 @@ log2
 ...
 ```
 
-### 2. `result_1` versus `results_1`
+### 2.`results_1`
 
 CATKINAS in the present setup creates:
 
 ```text
 results_1/
-```
-
-Some original source-code lines may still use:
-
-```text
-result_1/
 ```
 
 Check both scripts and replace the directory name consistently with the actual CATKINAS output directory before running.
