@@ -28,7 +28,7 @@ The workflow contains two stages:
    - Submits one MATLAB/CATKINAS calculation at a time through PBS/Torque.
    - Produces an ensemble of microkinetic output logs.
 
-2. **Statistical screening and TS-refinement tests (`N/N_test.py`)**
+2. **Statistical screening and TS-refinement tests (`N_test.py`)**
    - Reads the stochastic CATKINAS logs.
    - Extracts $|X_{\mathrm{DRC},i}|$ for every elementary step.
    - Counts how frequently each step exceeds the selected DRC threshold.
